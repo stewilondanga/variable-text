@@ -65,3 +65,10 @@ class ChangingTitle {
     }
   }
 };
+
+let ct = new ChangingTitle(document.querySelector('.changing-title'));
+const texts = ['Hello', 'Aloha', 'Hola', 'Bonjour'];
+let count = 0;
+setInterval(()=> {
+  ct.changeText(texts[++count % texts.length]);
+}, 2000);
