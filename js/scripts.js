@@ -37,4 +37,7 @@ class ChangingTitle {
 
 		letter.classList.remove('in');
 
+		letter.classList.add('out');
+    }
+
 		
