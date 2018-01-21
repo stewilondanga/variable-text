@@ -54,3 +54,7 @@ class ChangingTitle {
 
 			newTitle.appendChild(span)
     }
+
+		this.node.appendChild(newTitle);
+
+		
