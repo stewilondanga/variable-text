@@ -24,4 +24,13 @@ class ChangingTitle {
 
 							span.classList.add('letter', 'in');
 
-							
+							span.style.animationDelay = `${c * 0.1}s`;
+      node.appendChild(span);
+    }
+  }
+  changeText(newText) {
+    let oldTitle = this.node.querySelector('.current');
+    let i = 0;
+    for (let letter of oldTitle.children) {
+
+			
