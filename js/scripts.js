@@ -57,4 +57,11 @@ class ChangingTitle {
 
 		this.node.appendChild(newTitle);
 
-		
+		setTimeout(this.removeNode(oldTitle), 2000);
+  }
+  removeNode(x) {
+    return () => {
+      x.remove();
+    }
+  }
+};
