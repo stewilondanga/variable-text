@@ -7,8 +7,6 @@ body {
     font-family: courier;
 }
 
-
-
 h1 {
     	font-family: helvetica;
     	font-weight: normal;
@@ -19,7 +17,7 @@ h1 {
     	width: 375px;
     	margin: 0 auto;
     	border-bottom: 3px solid #f3f3f3;
-    }
+}
 
     .containers {
     	width: 520px;
