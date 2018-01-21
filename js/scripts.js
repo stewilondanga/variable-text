@@ -50,4 +50,6 @@ class ChangingTitle {
 
 			span.classList.add('letter', 'in');
 
+			span.style.animationDelay = `${c * 0.1 + 0.5}s`;
+
 			
