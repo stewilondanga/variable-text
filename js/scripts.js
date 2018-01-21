@@ -10,3 +10,9 @@ var navigate = (function() {
 class ChangingTitle {
   constructor(x=null) {
     this.node = x;
+
+		this.letterfy(this.node.querySelector('h1'));
+		  }
+		  letterfy(node) {
+		    let text = node.innerText;
+		    node.innerText = '';
