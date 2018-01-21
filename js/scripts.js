@@ -33,4 +33,6 @@ class ChangingTitle {
     let i = 0;
     for (let letter of oldTitle.children) {
 
-			
+		letter.style.animationDelay = `${i++ * 0.1}s`;
+
+		
