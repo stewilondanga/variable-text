@@ -40,4 +40,7 @@ class ChangingTitle {
 		letter.classList.add('out');
     }
 
+		oldTitle.classList.remove('current');
+    let newTitle = document.createElement('h1');
+
 		
