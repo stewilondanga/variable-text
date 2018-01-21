@@ -1,30 +1,30 @@
 var navigate = (function() {
-	$('.dd').toggle();
-	$('.dd_btn').click(function() {
-		var dataName = $(this).attr('data-name');
-		$('.dd').hide();
-		$('.' + dataName).toggle();
-	});
+  $('.dd').toggle();
+  $('.dd_btn').click(function() {
+    var dataName = $(this).attr('data-name');
+    $('.dd').hide();
+    $('.' + dataName).toggle();
+  });
 })();
 
 class ChangingTitle {
-  constructor(x=null) {
+  constructor(x = null) {
     this.node = x;
 
-		this.letterfy(this.node.querySelector('h1'));
-		  }
-		  letterfy(node) {
-		    let text = node.innerText;
-		    node.innerText = '';
+    this.letterfy(this.node.querySelector('h1'));
+  }
+  letterfy(node) {
+    let text = node.innerText;
+    node.innerText = '';
 
-				node.classList.add('current');
-				    for (let c in text) {
-				      let span = document.createElement('span');
-				      span.innerText = text[c];
+    node.classList.add('current');
+    for (let c in text) {
+      let span = document.createElement('span');
+      span.innerText = text[c];
 
-							span.classList.add('letter', 'in');
+      span.classList.add('letter', 'in');
 
-							span.style.animationDelay = `${c * 0.1}s`;
+      span.style.animationDelay = `${c * 0.1}s`;
       node.appendChild(span);
     }
   }
@@ -33,31 +33,31 @@ class ChangingTitle {
     let i = 0;
     for (let letter of oldTitle.children) {
 
-		letter.style.animationDelay = `${i++ * 0.1}s`;
+      letter.style.animationDelay = `${i++ * 0.1}s`;
 
-		letter.classList.remove('in');
+      letter.classList.remove('in');
 
-		letter.classList.add('out');
+      letter.classList.add('out');
     }
 
-		oldTitle.classList.remove('current');
+    oldTitle.classList.remove('current');
     let newTitle = document.createElement('h1');
 
-		newTitle.classList.add('current');
+    newTitle.classList.add('current');
     for (let c in newText) {
       let span = document.createElement('span');
       span.innerText = newText[c];
 
-			span.classList.add('letter', 'in');
+      span.classList.add('letter', 'in');
 
-			span.style.animationDelay = `${c * 0.1 + 0.5}s`;
+      span.style.animationDelay = `${c * 0.1 + 0.5}s`;
 
-			newTitle.appendChild(span)
+      newTitle.appendChild(span)
     }
 
-		this.node.appendChild(newTitle);
+    this.node.appendChild(newTitle);
 
-		setTimeout(this.removeNode(oldTitle), 2000);
+    setTimeout(this.removeNode(oldTitle), 2000);
   }
   removeNode(x) {
     return () => {
@@ -69,6 +69,6 @@ class ChangingTitle {
 let ct = new ChangingTitle(document.querySelector('.changing-title'));
 const texts = ['This', 'is', 'the', 'work', 'of', 'none', 'other', 'than', 'Stewart ilondanga'];
 let count = 0;
-setInterval(()=> {
+setInterval(() => {
   ct.changeText(texts[++count % texts.length]);
 }, 2000);
