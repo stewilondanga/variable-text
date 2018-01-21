@@ -27,6 +27,7 @@ h1 {
     top: 0em;
   }
 }
+
 @keyframes letter-out {
   0% {
     top: 0em;
