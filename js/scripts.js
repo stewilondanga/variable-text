@@ -52,4 +52,5 @@ class ChangingTitle {
 
 			span.style.animationDelay = `${c * 0.1 + 0.5}s`;
 
-			
+			newTitle.appendChild(span)
+    }
