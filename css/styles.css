@@ -37,6 +37,39 @@ h1 {
   }
 }
 
+div.changing-title {
+  font-size: 8vw;
+  height: 1.2em;
+  position: relative;
+  width: 100%;
+  overflow-y: hidden;
+  margin-left: 1em;
+  transform: translate3d(0,0,0);
+  h1 {
+    font-size: 1em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    .letter {
+      position: relative;
+      top: 1.2em;
+      &.in {
+        animation-name: letter-in;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+      }
+      &.out {
+        top: 0em;
+        animation-name: letter-out;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+}
 .containers {
     	width: 520px;
     	margin: 20px auto;
