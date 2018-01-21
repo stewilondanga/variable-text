@@ -6,3 +6,7 @@ var navigate = (function() {
 		$('.' + dataName).toggle();
 	});
 })();
+
+class ChangingTitle {
+  constructor(x=null) {
+    this.node = x;
