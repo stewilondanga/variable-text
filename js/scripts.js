@@ -16,3 +16,10 @@ class ChangingTitle {
 		  letterfy(node) {
 		    let text = node.innerText;
 		    node.innerText = '';
+
+				node.classList.add('current');
+				    for (let c in text) {
+				      let span = document.createElement('span');
+				      span.innerText = text[c];
+
+							
