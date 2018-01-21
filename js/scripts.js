@@ -35,4 +35,6 @@ class ChangingTitle {
 
 		letter.style.animationDelay = `${i++ * 0.1}s`;
 
+		letter.classList.remove('in');
+
 		
