@@ -67,7 +67,7 @@ class ChangingTitle {
 };
 
 let ct = new ChangingTitle(document.querySelector('.changing-title'));
-const texts = ['Hello', 'Aloha', 'Hola', 'Bonjour'];
+const texts = ['This', 'is', 'the', 'work', 'of', 'none', 'other', 'than', 'Stewart ilondanga'];
 let count = 0;
 setInterval(()=> {
   ct.changeText(texts[++count % texts.length]);
