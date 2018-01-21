@@ -48,4 +48,6 @@ class ChangingTitle {
       let span = document.createElement('span');
       span.innerText = newText[c];
 
+			span.classList.add('letter', 'in');
+
 			
