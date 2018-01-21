@@ -43,4 +43,9 @@ class ChangingTitle {
 		oldTitle.classList.remove('current');
     let newTitle = document.createElement('h1');
 
-		
+		newTitle.classList.add('current');
+    for (let c in newText) {
+      let span = document.createElement('span');
+      span.innerText = newText[c];
+
+			
