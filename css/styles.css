@@ -1,4 +1,4 @@
-/*body {
+body {
   margin: 0;
   display: flex;
   justify-content: center;
@@ -7,7 +7,7 @@
   font-family: courier;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+/*@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 
 .share__icon {
   width: 32px;
